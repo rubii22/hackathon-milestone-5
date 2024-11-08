@@ -1,0 +1,107 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background: linear-gradient(90deg, #4c81a4, #eb69d8, rgb(227, 227, 101));
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+h1 {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 3rem; /* Increases font size */
+    color: rgb(30, 31, 66); /* Sets the text color */
+    margin-top: 50px; /* Adds spacing from the top */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+form {
+    margin: auto;
+    background-color: rgb(134, 170, 207);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    max-width: 700px;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: rgb(100, 197, 236);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(72, 173, 221);
+    color: white;
+    transform: translateY(-2px);
+}
+
+input, textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 1px);
+    border: 1px solid rgb(102, 193, 232);
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid rgb(34, 147, 214);
+    box-shadow: 0 0 5px rgba(34, 147, 214, 0.5);
+}
+
+fieldset {
+    border: 2px solid rgb(19, 105, 139);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(194, 207, 219);
+    transition: border-color 0.3s ease;
+}
+
+fieldset:hover {
+    border-color: rgb(19, 140, 179);
+}
+
+#resume-display {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid rgb(194, 204, 207);
+    border-radius: 8px;
+    background-color: rgb(134, 170, 207);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#resume-display h2 {
+    color: rgb(34, 34, 68);
+    border-bottom: 1px solid rgb(25, 79, 102);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
